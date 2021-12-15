@@ -1,8 +1,16 @@
 // import functions and grab DOM elements
+import { getBeanies } from './fetch-utils.js';
+import { renderBeanieBabies } from './render-utils.js';
 
-// let state
+const beanieListEl = document.querySelector('.beanie-babies-list');
 
 // set event listeners 
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
+window.addEventListener('load', async() => {
+  // get all beanies from the supabase
+    const beanies = await getBeanies();
+  // render and append all dog cards to the container
+    for (let beanie of beanies) {
+        const beanieEl = renderBeanieBabies(beanie);
+        beanieListEl.append(beanieEl);
+    }
+});

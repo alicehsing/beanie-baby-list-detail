@@ -28,7 +28,11 @@ body {
     --footer-height: 25px;
     
     font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
+    background-color: #ffcfd2;
+    background-image: url('../assets/background-b.webp');
+    background-size: 1400px;
+    display: grid;
+    grid-template-columns: 200px 1fr;
 }
 
 main {
@@ -36,6 +40,8 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100%;
+    text-align: center;
     margin-bottom: calc(var(--footer-height));
 }
 
@@ -53,14 +59,29 @@ section {
     border: solid 2px var(--color1);
 }
 
-header {
-    display: flex;
-    justify-content: flex-end;
-    background-color: var(--color3);
-    height: var(--header-height);
-    box-shadow: var(--shadow);
+a {
+    text-decoration: none;
+    color: black;
 }
 
+header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #a3c4f3;
+    height: var(--header-height);
+    box-shadow: var(--shadow);
+    height: 100%;
+    width: 150px;
+    top: 0;
+}
+
+header a {
+    font-weight: 900;
+    color: black;
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
 
 h2 {
     font-size: 1.8rem;
@@ -71,12 +92,12 @@ h2 {
     margin-right: 20px;
 }
 
-header img {
-    height: var(--header-height);
+p {
+    margin: 0px;
 }
 
-p {
-    margin: var(--gutter);
+header img {
+    height: var(--header-height);
 }
   
 footer {
@@ -88,4 +109,52 @@ footer {
     justify-content: flex-end;
     background-color: var(--color3);
     box-shadow: var(--shadow);
+}
+
+.beanie-babies-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    width: 1000px;
+    height: 680px
+}
+
+.beanie-img {
+    width: 250px;
+    height: 200px;
+    border-radius: 300px;
+    margin-top: 30px;
+}
+
+.beanie {
+    font-size: 1.2rem;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    width: 250px;
+    height: 300px;
+    color: #012a4a;
+    text-align: center;
+}
+
+#beanie-babies-detail .name {
+    color:#173a6b;
+    font-size:40px;
+}
+
+#beanie-babies-detail img {
+    width: 500px;
+    height: 400px;
+    border-radius: 200px;
+}
+
+#beanie-babies-detail .year, #beanie-babies-detail .worth {
+    margin: 20px;
+    color: rgb(3, 3, 54);
+    font-size: 30px;;
 }
