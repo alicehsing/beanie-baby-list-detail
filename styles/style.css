@@ -41,6 +41,7 @@ main {
     justify-content: center;
     align-items: center;
     height: 100%;
+    text-align: center;
     margin-bottom: calc(var(--footer-height));
 }
 
@@ -98,8 +99,6 @@ p {
 header img {
     height: var(--header-height);
 }
-
-
   
 footer {
     position: fixed;
@@ -113,13 +112,13 @@ footer {
 }
 
 .beanie-babies-list {
-    /* border: solid 5px #cfbaf0; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     padding: 10px;
     width: 1000px;
+    height: 680px
 }
 
 .beanie-img {
@@ -136,10 +135,26 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* border: solid 2px #cfbaf0; */
     border-radius: 100px;
     width: 250px;
     height: 300px;
     color: #012a4a;
     text-align: center;
+}
+
+#beanie-babies-detail .name {
+    color:#173a6b;
+    font-size:40px;
+}
+
+#beanie-babies-detail img {
+    width: 500px;
+    height: 400px;
+    border-radius: 200px;
+}
+
+#beanie-babies-detail .year, #beanie-babies-detail .worth {
+    margin: 20px;
+    color: rgb(3, 3, 54);
+    font-size: 30px;;
 }

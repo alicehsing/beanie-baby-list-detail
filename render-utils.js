@@ -33,10 +33,10 @@ export function renderBeanieDetail(beanieData) {
 
     img.src = beanieData.image;
 
-    worthEl.textContent = beanieData.worth;
+    worthEl.textContent = `Worth:  ${beanieData.worth}`;
     worthEl.classList.add('worth');
 
-    yearEl.textContent = beanieData.year_created;
+    yearEl.textContent = `Year Created:  ${beanieData.year_created}`;
     yearEl.classList.add('year');
 
     descriptionEl.textContent = beanieData.description;
