@@ -36,6 +36,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100%;
     margin-bottom: calc(var(--footer-height));
 }
 
@@ -53,14 +54,29 @@ section {
     border: solid 2px var(--color1);
 }
 
-header {
-    display: flex;
-    justify-content: flex-end;
-    background-color: var(--color3);
-    height: var(--header-height);
-    box-shadow: var(--shadow);
+a {
+    text-decoration: none;
+    color: black;
 }
 
+header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #fbf8cc;
+    height: var(--header-height);
+    box-shadow: var(--shadow);
+    height: 100%;
+    width: 150px;
+    top: 0;
+}
+
+header a {
+    font-weight: 900;
+    color: black;
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
 
 h2 {
     font-size: 1.8rem;
@@ -71,13 +87,15 @@ h2 {
     margin-right: 20px;
 }
 
+p {
+    margin: 0px;
+}
+
 header img {
     height: var(--header-height);
 }
 
-p {
-    margin: var(--gutter);
-}
+
   
 footer {
     position: fixed;
@@ -88,4 +106,18 @@ footer {
     justify-content: flex-end;
     background-color: var(--color3);
     box-shadow: var(--shadow);
+}
+
+.beanie-babies-list {
+    border: solid 2px black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 50px;
+}
+
+.beanie-img {
+    width: 200px;
+    height: 200px;
 }
