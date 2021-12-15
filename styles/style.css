@@ -28,7 +28,11 @@ body {
     --footer-height: 25px;
     
     font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
+    background-color: #ffcfd2;
+    background-image: url('../assets/background-b.webp');
+    background-size: 1400px;
+    display: grid;
+    grid-template-columns: 200px 1fr;
 }
 
 main {
@@ -63,7 +67,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    background-color: #fbf8cc;
+    background-color: #a3c4f3;
     height: var(--header-height);
     box-shadow: var(--shadow);
     height: 100%;
@@ -109,15 +113,33 @@ footer {
 }
 
 .beanie-babies-list {
-    border: solid 2px black;
+    /* border: solid 5px #cfbaf0; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    padding: 50px;
+    justify-content: center;
+    padding: 10px;
+    width: 1000px;
 }
 
 .beanie-img {
-    width: 200px;
+    width: 250px;
     height: 200px;
+    border-radius: 300px;
+    margin-top: 30px;
+}
+
+.beanie {
+    font-size: 1.2rem;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: solid 2px #cfbaf0; */
+    border-radius: 100px;
+    width: 250px;
+    height: 300px;
+    color: #012a4a;
+    text-align: center;
 }
